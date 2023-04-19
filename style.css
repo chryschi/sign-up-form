@@ -1,3 +1,61 @@
+:root {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  display: flex;
+  margin: 0;
+}
+
+/* sidebar */
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  min-width: 40vw;
+  background: url(./images/avenue-815297.jpg);
+  background-size: cover;
+  background-position-x: center;
+  position: relative;
+
+  color: white;
+}
+
+.logo-banner {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 30vh;
+  background-color: hsla(283, 30%, 5%, 0.6);
+  padding: 20px;
+  height: 70px;
+}
+
+.logo-text {
+  color: white;
+  font-family: "Sacramento", cursive;
+  font-size: 2em;
+  margin: auto 20px;
+}
+
+.credit {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}
+
+.credit a {
+  color: white;
+}
+
+img {
+  height: 100%;
+}
+
 h1 {
-  background-color: aqua;
+  font-size: 1em;
 }
