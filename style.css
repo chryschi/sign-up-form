@@ -42,10 +42,13 @@ body {
 }
 
 .credit {
+  box-sizing: border-box;
   width: 100%;
   position: absolute;
   bottom: 0;
   text-align: center;
+  font-size: 0.5em;
+  padding: 20px;
 }
 
 .credit a {
