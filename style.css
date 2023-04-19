@@ -1,6 +1,6 @@
 :root {
   font-size: 16px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
   --banner-height: 80px;
   --banner-position: 22vh;
 }
