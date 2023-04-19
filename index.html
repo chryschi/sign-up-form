@@ -92,11 +92,22 @@
           <div class="row">
             <div class="field">
               <label for="first_name">First Name*</label>
-              <input type="text" id="first_name" name="first_name" required />
+              <input
+                type="text"
+                id="first_name"
+                name="first_name"
+                maxlength="30"
+                required
+              />
             </div>
             <div class="field">
               <label for="last_name">Last Name</label>
-              <input type="text" id="last_name" name="last_name" />
+              <input
+                type="text"
+                id="last_name"
+                name="last_name"
+                maxlength="30"
+              />
             </div>
           </div>
           <div class="row">
@@ -112,7 +123,13 @@
           <div class="row">
             <div class="field">
               <label for="password">Password*</label>
-              <input type="text" id="password" name="password" required />
+              <input
+                type="text"
+                id="password"
+                name="password"
+                class="error"
+                required
+              />
             </div>
             <div class="field">
               <label for="confirm_password">Confirm password*</label>
@@ -120,6 +137,7 @@
                 type="text"
                 id="confirm_password"
                 name="confirm_password"
+                class="error"
                 required
               />
             </div>

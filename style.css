@@ -123,8 +123,7 @@ button:hover {
 }
 
 button:active {
-  color: hsl(250, 51%, 46%);
-  background-color: hsla(0, 0%, 42%, 0.293);
+  background-color: hsl(250, 54%, 52%);
 }
 
 /* form */
@@ -157,6 +156,8 @@ form {
   display: flex;
   flex-direction: column;
   margin-right: 30px;
+  width: 50%;
+  max-width: 200px;
 }
 
 h1 {
@@ -179,6 +180,10 @@ input {
 input:focus {
   border: 1px solid hsl(231, 56%, 49%);
   box-shadow: 3px 3px 3px hsla(278, 31%, 5%, 0.33);
+}
+
+.error:invalid {
+  border: 1px solid hsl(0, 100%, 56%);
 }
 
 /* input:invalid {
