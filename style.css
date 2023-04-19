@@ -123,7 +123,7 @@ form {
 
 .row {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: start;
   gap: 16px;
   margin: 16px 0;
@@ -134,3 +134,33 @@ form {
   flex-direction: column;
   margin-right: 30px;
 }
+
+h1 {
+  color: hsl(300, 3%, 16%);
+}
+
+label {
+  margin-bottom: 3px;
+  color: hsl(300, 3%, 16%);
+  font-weight: bold;
+}
+input {
+  border: 1px solid hsl(274, 9%, 69%);
+  border-radius: 3px;
+  outline: none;
+  padding: 7px;
+  font-size: 1.5em;
+}
+
+input:focus {
+  border: 1px solid hsl(231, 56%, 49%);
+  box-shadow: 3px 3px 3px hsla(278, 31%, 5%, 0.33);
+}
+
+input:invalid {
+  border: 1px solid hsl(0, 100%, 56%);
+}
+
+/* input:focus:valid {
+  border: 1px solid hsl(121, 100%, 56%);
+} */
