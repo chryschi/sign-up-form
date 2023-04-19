@@ -3,6 +3,13 @@
   font-family: "PT Sans", Arial, Helvetica, sans-serif;
   --banner-height: 80px;
   --banner-position: 22vh;
+  --form-position: calc(var(--banner-position) + var(--banner-height));
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html,
@@ -78,6 +85,8 @@ h1 {
 main {
   background-color: hsl(270, 44%, 96%);
   position: relative;
+  height: 100%;
+  overflow-y: scroll;
 }
 
 p {
@@ -85,8 +94,13 @@ p {
   margin: auto;
 }
 
-p.description {
-  margin: 6px auto;
+.description {
+  position: relative;
+  top: calc(var(--form-position) - 130px);
+}
+
+.description p:first-child {
+  margin-bottom: 10px;
 }
 
 /* p.description:last-of-type {
@@ -100,13 +114,23 @@ button {
   border-radius: 3px;
   color: white;
   font-weight: bold;
-  padding: 5px 18px;
+  font-size: 0.7em;
+  padding: 8px 26px;
+}
+
+button:hover {
+  background-color: hsl(250, 75%, 25%);
+}
+
+button:active {
+  color: hsl(250, 51%, 46%);
+  background-color: hsla(0, 0%, 42%, 0.293);
 }
 
 /* form */
 form {
   position: absolute;
-  top: calc(var(--banner-position) + var(--banner-height));
+  top: var(--form-position);
   width: 100%;
 }
 
@@ -148,8 +172,8 @@ input {
   border: 1px solid hsl(274, 9%, 69%);
   border-radius: 3px;
   outline: none;
-  padding: 7px;
-  font-size: 1.5em;
+  padding: 4px;
+  font-size: 1.2em;
 }
 
 input:focus {
@@ -157,10 +181,26 @@ input:focus {
   box-shadow: 3px 3px 3px hsla(278, 31%, 5%, 0.33);
 }
 
-input:invalid {
+/* input:invalid {
   border: 1px solid hsl(0, 100%, 56%);
-}
+} */
 
 /* input:focus:valid {
   border: 1px solid hsl(121, 100%, 56%);
 } */
+
+form p {
+  font-size: 0.7em;
+}
+
+form a {
+  color: hsl(250, 63%, 51%);
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
